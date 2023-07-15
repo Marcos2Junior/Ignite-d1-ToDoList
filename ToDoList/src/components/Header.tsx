@@ -5,7 +5,10 @@ export function Header(){
     return (
         <header className={styles.header}>
             <img src={logo} alt="logotipo da ToDoList" />
-            <h1>todo</h1>
+            <div>
+                <span>to</span>
+                <span>do</span> 
+            </div>
         </header>
     );
 }
