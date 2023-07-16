@@ -10,11 +10,15 @@ import noCheckImg from '../assets/nocheck.svg';
 import noCheckHoverImg from '../assets/nocheck-hover.svg';
 
 import { useState } from 'react';
+import { ITask } from '../interfaces/ITask';
 
-export function Task() {
+export function Task({ ...Task } : ITask) {
 
     const [checkOver, setCheckOver] = useState(false);
     const [trashOver, setTrashOver] = useState(false);
+
+    const selectedImgCheckHover = Task.finished !== undefined ? checkHoverImg : noCheckHoverImg;
+    const selectedImgCheck = Task.finished !== undefined ? checkImg : noCheckImg;
 
     return (
         <div className={style.task}>
@@ -23,11 +27,11 @@ export function Task() {
                 onMouseOut={() => setCheckOver(false)}
                 className={style.nocheck}>
                     <img 
-                        src={checkOver ? noCheckHoverImg : noCheckImg}
+                        src={checkOver ? selectedImgCheckHover : selectedImgCheck}
                         alt="" 
                     />
             </button>
-            <span>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</span>
+            <span>{Task.task}</span>
             <button 
                 onMouseOver={() => setTrashOver(true)}
                 onMouseOut={() => setTrashOver(false)}
