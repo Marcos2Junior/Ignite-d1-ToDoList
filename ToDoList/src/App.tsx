@@ -5,6 +5,7 @@ import styles from './App.module.css';
 import './global.css';
 import { Tasks } from './components/Tasks';
 import { ITask } from './interfaces/ITask';
+import { useState } from 'react';
 
 const tasks : ITask[] = [
   {
@@ -15,11 +16,11 @@ const tasks : ITask[] = [
 ]
 
 export function App() {
+
   return (
     <div>
       <Header />
       <main className={styles.wrapper}>
-        <NewTask />
         <Tasks tasks={tasks} />
       </main>
     </div>
