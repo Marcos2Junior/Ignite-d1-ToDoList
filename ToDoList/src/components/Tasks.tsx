@@ -1,5 +1,6 @@
 import style from './Tasks.module.css';
 import imgClipboard from '../assets/clipboard.svg';
+import { Task } from './Task';
 
 export function Tasks(){
     return (
@@ -14,13 +15,22 @@ export function Tasks(){
                     <span>2 de 5</span>
                 </div>
             </div>
-            <div className={style.nocontent}>
+
+            <div className={style.content}>
+                <Task />
+                <Task />
+                <Task />
+                <Task />
+                <Task />
+            </div>
+
+            {/* <div className={style.nocontent}>
                 <img src={imgClipboard} alt="" />
                 <div>
                     <p>Você ainda não tem tarefas cadastradas</p>
                     <p>Crie tarefas e organize seus itens a fazer</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

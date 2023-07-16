@@ -1,0 +1,38 @@
+.task {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: .75rem;
+    font-size: .875rem;
+    line-height: 1.225rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-500);
+    background: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0, 0.06);
+}
+
+button {
+    border: 0;
+    background: transparent;
+    /* borda quando tiver com focus */
+    border-radius: 2px;
+    /* centraliza o icone no botao */
+    line-height: 0;
+}
+
+button img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.task + .task {
+    margin-top: .75rem;
+}
+
+.trash {
+    cursor: pointer;
+
+}
+.nocheck {
+    cursor: pointer;
+}
