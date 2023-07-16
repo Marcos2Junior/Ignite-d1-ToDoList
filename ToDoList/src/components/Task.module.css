@@ -22,6 +22,7 @@ button {
     border-radius: 2px;
     /* centraliza o icone no botao */
     line-height: 0;
+    cursor: pointer;
 }
 
 button img {
@@ -37,6 +38,7 @@ button img {
     cursor: pointer;
 
 }
-.nocheck {
-    cursor: pointer;
+.checked {
+    text-decoration:line-through;
+    color: var(--gray-300);
 }

@@ -1,5 +1,5 @@
 import { ITask } from "./ITask";
 
-export interface ITaskList {
+export interface ITasksProps {
     tasks: ITask[]
 }
