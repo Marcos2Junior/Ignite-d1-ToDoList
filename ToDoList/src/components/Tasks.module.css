@@ -1,0 +1,63 @@
+.tasks {
+    margin-top: 6rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.header div span:last-child{
+   padding: 2px 8px;
+   border-radius: 999px;
+   background: var(--gray-400);
+   color: var(--gray-200);
+   font-size: .75rem;
+   font-weight: 700;
+}
+
+.nocontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-self: stretch;
+    padding: 4rem 1.5rem;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+}
+
+.nocontent img{
+    width: 3.5rem;
+    height: 3.375rem;
+    margin: auto;
+}
+
+.nocontent div{
+    text-align: center;
+}
+
+.nocontent p{
+   color: var(--gray-300);
+   font-weight: 700;
+   font-size: 1rem;
+   font-style: normal;
+   line-height: 1.4;
+}
+
+.nocontent p:last-child{
+    font-weight: 400;
+ }
