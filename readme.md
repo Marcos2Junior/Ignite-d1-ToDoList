@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ToDo List é uma página web para criação e controle de tarefas.
 
-[Demo](https://marcos2junior.github.io/Ignite-d1-ToDoList/)
+[Demo](https://marcos2junior.github.io/ignite-d1-todolist)
 
 ## 🔖 Layout
 
