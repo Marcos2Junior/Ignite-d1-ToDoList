@@ -1,11 +1,9 @@
 import { Header } from './components/Header';
-import { NewTask } from './components/NewTask';
 import styles from './App.module.css';
 
 import './global.css';
 import { Tasks } from './components/Tasks';
 import { ITask } from './interfaces/ITask';
-import { useState } from 'react';
 
 const tasks : ITask[] = [
   {
